@@ -1,0 +1,106 @@
+# House Price Prediction App
+
+A machine learning web application built with Python and Flask to predict house prices using a trained Ridge Regression model.
+
+The project combines data analysis, model training, and web development to demonstrate how a machine learning model can be integrated into a web application.
+
+## Features
+
+- Machine Learning: Uses a trained Ridge Regression model for house price prediction.
+- Flask Web Application: Provides a Python backend for running the prediction application.
+- Data Analysis: Includes a Jupyter Notebook for exploring the dataset and developing the model.
+- Model Persistence: Stores the trained model in a `.pkl` file for reuse.
+- Dataset Management: Includes CSV files used for model development and training.
+
+## Tech Stack
+
+- Language: Python
+- Machine Learning: Scikit-learn
+- Web Framework: Flask
+- Data Processing: Pandas, NumPy
+- Model Development: Jupyter Notebook
+- Frontend: HTML and CSS (Flask templates)
+
+## Project Structure
+
+```text
+house-prediction-app/
+├── templates/              # HTML templates for the web interface
+├── RidgeModel.pkl          # Trained Ridge Regression model
+├── final_dataset.csv       # Processed dataset
+├── house_prediction.ipynb  # Data analysis and model development
+├── main.py                 # Flask application
+├── train.csv               # Training dataset
+└── README.md
+```
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ameya1603/house-prediction-app.git
+cd house-prediction-app
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**macOS / Linux**
+```bash
+source venv/bin/activate
+```
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+Install the required packages:
+
+```bash
+pip install flask pandas numpy scikit-learn
+```
+
+If the project uses additional libraries, install those as well. For reproducible setup, consider adding a `requirements.txt` file containing the exact dependencies and versions.
+
+### 4. Run the Application
+
+```bash
+python main.py
+```
+
+Open the local URL displayed in your terminal, typically:
+
+```text
+http://127.0.0.1:5000/
+```
+
+## Model Development
+
+The `house_prediction.ipynb` notebook contains the workflow for exploring the data and developing the prediction model.
+
+The repository includes:
+
+- `train.csv` — training data
+- `final_dataset.csv` — processed data
+- `RidgeModel.pkl` — serialized trained model
+
+Ridge Regression is a regularized linear regression technique that adds an L2 penalty to help control model complexity.
+
+## Future Improvements
+
+- Add model evaluation metrics such as MAE, RMSE, and R².
+- Improve input validation and error handling.
+- Add visualizations for exploratory data analysis.
+- Compare Ridge Regression with other regression algorithms.
+- Create a reproducible dependency file using `requirements.txt`.
+- Deploy the application to a cloud hosting platform.
+
